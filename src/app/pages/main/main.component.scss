@@ -1,0 +1,52 @@
+ul{
+    background-image: url(../login/hatter.jpg);
+}
+.mat-card {
+    background-color: #A39974;
+    width: 425px;
+    height: 425px;
+    margin: 50px;
+}
+.name{
+    color:  #524D3A;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-content{
+    margin: 16px; 
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    color:  #524D3A;
+    align-items: center;
+}
+img {
+    width: 320px;
+    height: 310px;
+    margin: 2px 2px 2px 2px;
+    display: block;
+    margin: auto;
+}
+.items{
+    background-color: #524D3A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+}
+.items :hover{
+    background-color: #9C926E;
+    border-radius: 4px;
+}
+button.color {
+    background-color: #524D3A;
+    color: #F5F5DC;
+    margin: 10px;
+    cursor: pointer;
+    width: 75px;
+    border-radius: 4px;
+}
+.icon :hover{
+    background-color: #524D3A;
+}

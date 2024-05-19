@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "elsore-vagymegsem",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

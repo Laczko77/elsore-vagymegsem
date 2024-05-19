@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mobiltweb-32764": {
+      "hosting": {
+        "elsore-vagymegsem": [
+          "mobiltweb-32764"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mobiltweb-32764"
+  }
+}

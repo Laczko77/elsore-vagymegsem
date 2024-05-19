@@ -1,0 +1,42 @@
+<div>
+    <h1>Megrendelések</h1>
+    <mat-progress-bar *ngIf="!loaded" mode="indeterminate"></mat-progress-bar>
+  
+    <table
+      *ngIf="loaded"
+      mat-table
+      [dataSource]="orders"
+      class="mat-elevation-z8"
+    >
+      <ng-container matColumnDef="items">
+        <th mat-header-cell *matHeaderCellDef>Tételek</th>
+        <td mat-cell *matCellDef="let items">
+          <ul>
+            <li *ngFor="let item of items.items">
+              {{ item.quantity }}x {{ item.name }}
+            </li>
+          </ul>
+        </td>
+      </ng-container> 
+  
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>Állapot</th>
+        <td mat-cell *matCellDef="let item">{{ item.status }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>Dátum</th>
+        <td mat-cell *matCellDef="let item">
+          {{ item.date | hungarianDate }}
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <span>
+      <button class="color" mat-button (click)="goBack()">
+        Vissza a fiókhoz
+      </button>
+    </span>
+  </div>

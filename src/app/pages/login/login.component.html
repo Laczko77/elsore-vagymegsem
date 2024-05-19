@@ -1,0 +1,19 @@
+<span class="loading" *ngIf="loading">
+    <mat-progress-bar mode="indeterminate" class="custom-color"></mat-progress-bar>
+</span>
+
+<div class="forms">
+    <div class="box">
+        <h1>Bejelentkezés</h1>
+        <mat-form-field class="custom-color">
+            <mat-label class="custom-color" for="email"><mat-icon class="custom-icon" >mail</mat-icon>Email cím megadása:</mat-label><input class="custom-color" matInput type="text" [formControl]="email" />
+        </mat-form-field>
+        <mat-form-field class="custom-color">
+            <mat-label class="custom-color" for="password"><mat-icon class="custom-icon">lock</mat-icon>Jelszó megadása:</mat-label><input class="custom-color" matInput type="password" [formControl]="password" />
+        </mat-form-field>
+        <span>
+            <span><button mat-raised-button class="custom-button" (click)="login()">Bejelentkezés</button></span>
+            <span><button mat-raised-button class="custom-button" [routerLink]="'/signup'">Regisztráció</button></span>
+        </span>
+    </div>
+</div>

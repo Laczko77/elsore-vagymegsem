@@ -1,0 +1,48 @@
+.forms{
+    background-image: url(../login/hatter.jpg);
+    display: flex; 
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+.box{
+    background-color: #A39974; 
+    color: #524D3A;
+    margin: 50px;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+}
+mat-form-field{
+    color: #524D3A;
+    width: 90%;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 18px;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+} 
+button.custom-button {
+    background-color: #524D3A;
+    color: #F5F5DC;
+    margin: 10px;
+}
+
+mat-label.custom-color{
+    color: #524D3A;
+}
+

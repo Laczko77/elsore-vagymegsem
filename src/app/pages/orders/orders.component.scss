@@ -1,0 +1,28 @@
+h1 {
+    margin: 20px;
+  }
+  
+  div {
+    background-color: #A39974;
+    color: #524D3A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  
+  button {
+    margin: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  } 
+
+  button.color {
+    background-color: #524D3A;
+    color: #F5F5DC;
+    margin: 10px;
+} 

@@ -1,0 +1,17 @@
+<div class="main-component">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Fiók áttekintés</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-progress-bar *ngIf="!loaded" mode="indeterminate"></mat-progress-bar>
+        <div *ngIf="loaded">
+          <p>E-mail: {{ user?.email }}</p>
+          <p>Felhasználónév: {{ user?.username }}</p>
+          <button class="custom-button" mat-flat-button (click)="goToOrders()">
+            Ugrás a megrendelésekhez
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>

@@ -37,6 +37,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -97,10 +98,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "elsore-vagymegsem:build:production",
+              "serveTarget": "elsore-vagymegsem:serve:production"
+            },
+            "development": {
+              "buildTarget": "elsore-vagymegsem:build:development",
+              "serveTarget": "elsore-vagymegsem:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
